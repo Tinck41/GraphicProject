@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Угадай мелодию</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="jquery.fullpage.js"></script>
+</head>
+
+<body>
+		<div id="fullpage">
+			<section id="sc1">
+				<audio src="Motoi Sakuraba - Majula.mp3" controls id="audio"></audio>
+				<input class="num" type="text" id="num1">
+				<h1 id="1">1 мелодия</h1>
+				<button id="Ready" onclick="Right();">Наш ответ!</button>
+			</section>
+
+
+			<section id="sc2">
+				<audio src="Cake - Long Time.mp3" controls id="audio"></audio>
+				<input class="num" type="text" id="num2">
+				<h1 id="2">2 мелодия</h1>
+				<button id="Ready" onclick="Right2();">Наш ответ!</button>
+			</section>
+
+
+			<section>
+				<audio src="Mahouka Koukou no Rettousei OST 22- - code break.mp3" controls id="audio"></audio>
+				<input class="num" type="text" id="num3">
+				<h1 id="3">3 мелодия</h1>
+				<button id="Ready3" onclick="Right3();">Наш ответ!</button>
+			</section>
+
+
+			<section>
+				h1>4 мелодия</h1>
+			</section>
+
+
+		</div>
+		<script type="text/javascript">
+			FastClick.attach(document.body);
+			$('#fullpage').fullpage();
+		</script>
+		<script src="YouAreRightOrNO.js"></script>
+</body>
+</html>
